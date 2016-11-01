@@ -1,0 +1,24 @@
+{
+  "name": "odengec",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spawnedc/odengec.git"
+  },
+  "author": "Can Yilmaz<spawnedc@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spawnedc/odengec/issues"
+  },
+  "homepage": "https://github.com/spawnedc/odengec#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "require-dir": "^0.3.1"
+  }
+}
