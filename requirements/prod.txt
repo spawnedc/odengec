@@ -5,3 +5,4 @@ git+https://github.com/adamalton/django-csp-reports.git#egg=cspreports
 django-session-csrf
 six
 croniter==0.3.13
+django-crispy-forms==1.6.1

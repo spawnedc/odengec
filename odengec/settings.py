@@ -29,7 +29,7 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = (
-    'djangae', # Djangae needs to come before django apps in django 1.7 and above
+    'djangae',  # Djangae needs to come before django apps in django 1.7 and above
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'cspreports',
     'djangae.contrib.gauth.datastore',
     'djangae.contrib.security',
+    'crispy_forms',
     'odengec',
     # 'djangae.contrib.uniquetool',
 )
@@ -63,11 +64,11 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 "django.contrib.auth.context_processors.auth",
-                "django.core.context_processors.debug",
-                "django.core.context_processors.i18n",
-                "django.core.context_processors.media",
-                "django.core.context_processors.static",
-                "django.core.context_processors.tz",
+                "django.template.context_processors.debug",
+                "django.template.context_processors.i18n",
+                "django.template.context_processors.media",
+                "django.template.context_processors.static",
+                "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
                 "session_csrf.context_processor"
             ],
@@ -128,6 +129,8 @@ CSP_FRAME_SRC = ("'self'", "www.google.com", "www.youtube.com", "accounts.google
 CSP_SCRIPT_SRC = ("'self'", "*.googleanalytics.com", "*.google-analytics.com", "ajax.googleapis.com")
 CSP_IMG_SRC = ("'self'", "data:", "s.ytimg.com", "*.googleusercontent.com", "*.gstatic.com", "www.google-analytics.com")
 CSP_CONNECT_SRC = ("'self'", "plus.google.com", "www.google-analytics.com")
+
+ANON_ALWAYS = True
 
 
 from djangae.contrib.gauth.settings import *
