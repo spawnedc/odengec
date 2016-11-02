@@ -1,4 +1,4 @@
-application: odengec
+application: spw-odengec
 version: 1
 runtime: python27
 api_version: 1
@@ -40,8 +40,15 @@ skip_files:
     - manage.py
     - README.md
     - install_deps
-    - requirements.txt
+    - requirements/
     - sitepackages/dev*
     - \.storage.*
     - \.git
     - (.*)\.pyc
+    - node_modules/
+    - gulpfile.js
+    - \.nvmrc
+    - \.gitignore
+    - package.json
+    - README.md
+    - static-dev/*
