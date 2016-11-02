@@ -18,10 +18,12 @@ handlers:
 - url: /static
   static_dir: static/
   secure: always
+  login: admin
 
 - url: /static-dev
   static_dir: static-dev/
   secure: always
+  login: admin
 
 # Set Django admin to be login:admin as well as Django's is_staff restriction
 - url: /admin.*
@@ -32,6 +34,7 @@ handlers:
 - url: /.*
   script: odengec.wsgi.application
   secure: always
+  login: admin
 
 skip_files:
     - manage.py
